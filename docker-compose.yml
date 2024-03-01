@@ -17,11 +17,11 @@ services:
       - datas:/app/data
 
   mysql:
-    image: mysql:8
+    image: mysql:latest
     container_name: mysql_container
     environment:
       MYSQL_USER: root
-      MYSQL_ALLOW_EMPTY_PASSWORD: ''
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
       MYSQL_DB: SpringBootcicd
     ports:
       - 3306:3306
